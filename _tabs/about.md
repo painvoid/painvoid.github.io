@@ -23,3 +23,9 @@ This blog is simply a place where I share:
 
 I’m not an expert I’m learning in public, making mistakes, and improving over time.  
 If you’re also starting out, you might find something useful here.
+
+## Contact
+
+<a href="https://github.com/painvoid"><i class="fab fa-github fa-lg"></i></a>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/omar-oraiche-a06918388"><i class="fab fa-linkedin fa-lg"></i></a>&nbsp;&nbsp;
+<a href="#"><i class="fab fa-discord fa-lg"></i></a>
