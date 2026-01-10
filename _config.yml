@@ -38,7 +38,7 @@ theme_mode: dark
 cdn: ""
 
 # Sidebar avatar (PUT YOUR IMAGE HERE)
-avatar: "/assets/img/avatar.png"
+avatar: /assets/img/favicons/avatar.jpg"
 
 toc: true
 paginate: 10
