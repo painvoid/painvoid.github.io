@@ -23,6 +23,7 @@ This blog is simply a place where I share:
 
 I’m not an expert I’m learning in public, making mistakes, and improving over time.  
 If you’re also starting out, you might find something useful here.
+- **Hack The Box**: https://app.hackthebox.com/users/2726956
 
 ## Contact
 
