@@ -12,9 +12,9 @@ timezone: Africa/Casablanca
 # --------------------------
 
 title: p41nf
-tagline: Red Team | Active Directory | Writeups
+tagline:  A chill guy learning cybersecurity and sharing writeups.
 description: >
-  Offensive security research, red team tradecraft, and real-world lab writeups.
+  Learning cybersecurity step by step. I share writeups, notes, and things I break along the way.
 
 url: "https://painvoid.github.io"
 baseurl: ""
