@@ -148,3 +148,15 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+# --------------------------
+# Post UI Cleanup (HTB style)
+# --------------------------
+
+license:
+  enabled: false
+
+share:
+  enabled: false
+
+post_nav:
+  enabled: false
