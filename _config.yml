@@ -12,7 +12,7 @@ timezone: Africa/Casablanca
 # --------------------------
 
 title: p41nf
-tagline:  A chill guy learning cybersecurity and sharing writeups.
+tagline: A chill guy learning cybersecurity and sharing writeups.
 description: >
   Learning cybersecurity step by step. I share writeups, notes, and things I break along the way.
 
@@ -31,20 +31,28 @@ social:
 # Appearance
 # --------------------------
 
-# Force dark mode (this fixes your issue)
 theme_mode: dark
-
-# Disable external CDN (more control, less surprises)
 cdn: ""
 
-# Sidebar avatar (PUT YOUR IMAGE HERE)
 avatar: "/assets/img/favicons/zb.png"
 
-toc: true
 paginate: 10
 
 # --------------------------
-# Analytics (disabled for now)
+# Global UI Cleanup (IMPORTANT)
+# --------------------------
+
+license:
+  enabled: false
+
+share:
+  enabled: false
+
+post_nav:
+  enabled: false
+
+# --------------------------
+# Analytics (disabled)
 # --------------------------
 
 analytics:
@@ -64,7 +72,7 @@ comments:
   provider:
 
 # --------------------------
-# PWA (safe to keep enabled)
+# PWA
 # --------------------------
 
 pwa:
@@ -91,6 +99,10 @@ collections:
     output: true
     sort_by: order
 
+# --------------------------
+# Defaults (THIS WAS THE ISSUE)
+# --------------------------
+
 defaults:
   - scope:
       path: ""
@@ -99,6 +111,9 @@ defaults:
       layout: post
       toc: true
       comments: false
+      license: false
+      share: false
+      post_nav: false
       permalink: /posts/:title/
 
   - scope:
@@ -148,15 +163,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-# --------------------------
-# Post UI Cleanup (HTB style)
-# --------------------------
-
-license:
-  enabled: false
-
-share:
-  enabled: false
-
-post_nav:
-  enabled: false
