@@ -1,6 +1,6 @@
 ---
 title: "Hack The Box — Browsed"
-date: 2026-01-12
+date: 2026-01-15
 author: pain
 categories: [Hack The Box, Linux]
 tags: [htb, chrome-extension, ssrf, bash-injection, python, privesc]
