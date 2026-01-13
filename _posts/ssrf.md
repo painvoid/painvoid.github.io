@@ -8,7 +8,7 @@ toc: true
 comments: false
 image:
   path: /assets/img/favicons/ssf.png
-  alt: Hack The Box Expressway machine
+  alt: Hack The Box Browsed machine
 ---
 
 ## Overview
