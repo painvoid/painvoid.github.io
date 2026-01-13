@@ -7,7 +7,7 @@ tags: [htb, chrome-extension, ssrf, bash-injection, python, privesc]
 toc: true
 ---
 
-![Browsed Banner](/assets/img/favicons/ssf.png)
+
 
 ## Overview
 
