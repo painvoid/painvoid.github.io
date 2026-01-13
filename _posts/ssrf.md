@@ -5,7 +5,6 @@ author: pain
 categories: [Hack The Box, Linux]
 tags: [htb, chrome-extension, ssrf, bash-injection, python, privesc]
 toc: true
-comments: false
 image:
   path: /assets/img/favicons/ssf.png
 ---
