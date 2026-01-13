@@ -5,6 +5,10 @@ author: pain
 categories: [Hack The Box, Linux]
 tags: [htb, chrome-extension, ssrf, bash-injection, python, privesc]
 toc: true
+comments: false
+image:
+  path: /assets/img/favicons/cc.png
+  alt: Hack The Box Expressway machine
 ---
 
 ## Overview
