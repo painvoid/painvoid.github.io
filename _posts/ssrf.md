@@ -1,6 +1,6 @@
 ---
 title: "Hack The Box — Browsed"
-date: 2026-01-12
+date: 2026-01-16
 author: pain
 categories: [Hack The Box, Linux]
 tags: [htb, chrome-extension, ssrf, bash-injection, python, privesc]
@@ -8,7 +8,6 @@ toc: true
 comments: false
 image:
   path: /assets/img/favicons/ssf.png
-  alt: Hack The Box Browsed machine
 ---
 
 ## Overview
